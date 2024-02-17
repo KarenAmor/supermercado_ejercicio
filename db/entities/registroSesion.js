@@ -23,7 +23,8 @@ const RegistroSesion = new EntitySchema({
     },
     fecha_hora: {
       type: "datetime",
-    },
+      default: () => "CURRENT_TIMESTAMP", // or use another default value
+    }
   }
 });
 

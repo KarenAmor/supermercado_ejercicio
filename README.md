@@ -1,10 +1,9 @@
 # Proyecto de Gestión de Clientes y Asesores
 
-- Este proyecto es una aplicación de gestión de empleados administradores
+- Este proyecto es una aplicación de gestión de empleados, supervisores y administradores para un supermercado
 
 
 ## Características
-
 
 
 ## Tecnologías utilizadas
@@ -14,10 +13,6 @@
 - TypeORM para la configuración y gestión de la base de datos.
 - Express.js para el enrutamiento y la creación de API.
 - Bcrypt para el hashing de contraseñas y garantizar la seguridad de las credenciales.
-- Nodemailer para enviar correos electrónicos
-- Ethereal Email permite visualizar los correos electrónicos enviados desde tu aplicación sin necesidad de utilizar un servidor de correo real.
-- Joi para la validacion de los datos de entrada
-- Jest para las pruebas unitarias
 
 ## Estructura del Proyecto
 
@@ -29,11 +24,7 @@
 
     |-- entities
 
-|-- middleware
-
 |-- routes
-
-|-- tests
 
 |-- util
 
@@ -58,8 +49,10 @@
 
 La aplicación tiene una documentación de swagger que se puede encontrar en la siguiente URL: http://localhost:3000/api-docs/#/
 
-## Servicios 
-
+## Servicios
+/empleados, get: trae la lista de todos los empleados
+/empleados, post: Crea un empleado con credenciales
+/iniciosesion, post: Permite iniciar sesion y construye un token
 
 ## Contribución
 
