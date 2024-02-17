@@ -4,9 +4,8 @@ const swaggerFile = require("./swagger.json");
 const { createConnection } = require("typeorm");
 const { connectToDatabase } = require("./database");
 const bodyParser = require("body-parser");
-const autenticacionMiddleware = require('./middleware/autenticacionMiddleware'); 
 
-
+const EmpleadosRoute = require("./routes/registroEmpleadosRoutes");
 const app = express();
 
 // Configuracion bodyParser
@@ -19,6 +18,7 @@ app.get("/", (req, res) => {
   res.send("¡Bienvenido a la página principal!");
 });
 
+app.use("/empleados", EmpleadosRoute);
 
 /* Catch Validation error */
 app.use((err, req, res, next) => {

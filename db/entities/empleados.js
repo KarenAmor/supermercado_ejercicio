@@ -17,6 +17,10 @@ const Empleados = new EntitySchema({
       type: "varchar",
       nullable: false,
     },
+    email: {
+      type: "varchar",
+      nullable: false,
+    },
     id_area: {
       type: Number,
       nullable: true,
@@ -44,6 +48,7 @@ const Empleados = new EntitySchema({
       type: "many-to-one",
       joinColumn: {
         name: "id_area",
+        referencedColumnName: "id",
       },
     },
     cargo: {
@@ -51,6 +56,7 @@ const Empleados = new EntitySchema({
       type: "many-to-one",
       joinColumn: {
         name: "id_cargo",
+        referencedColumnName: "id",
       },
     },
   },
