@@ -6,15 +6,13 @@ async function connectToDatabase() {
   if (!connection) {
     connection = await createConnection({
       type: "sqlite",
-      database: "db/echo.db",
+      database: "db/supermercado.db",
       synchronize: true,
       entities: [
-       require("./db/entities/Clientes"),
-       require("./db/entities/Credenciales"),
-       require("./db/entities/Tarjetas"),
-       require("./db/entities/Asesores"),
-       require("./db/entities/Productos"),
-       require("./db/entities/Transacciones"),
+       require("./db/entities/areas"),
+       require("./db/entities/cargos"),
+       require("./db/entities/empleados"),
+       require("./db/entities/registroSesion")
       ],
     });
   }
