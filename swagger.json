@@ -1,0 +1,132 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "API de Gestión de Clientes y Asesores",
+    "description": "Una API para gestionar clientes y asesores",
+    "version": "1.0.0"
+  },
+  "tags": [
+    {
+      "name": "Clientes",
+      "description": "Operaciones relacionadas con los clientes"
+    },
+    {
+      "name": "Sesión",
+      "description": "Operaciones relacionadas con la sesión"
+    },
+    {
+      "name": "Tarjetas",
+      "description": "Operaciones relacionadas con las tarjetas"
+    },
+    {
+      "name": "Asesores",
+      "description": "Operaciones relacionadas con los asesores"
+    }
+  ],
+  "paths": {
+    "/clientes": {
+      "get": {
+        "tags": ["Clientes"],
+        "responses": {
+          "200": {
+            "description": "Listado de clientes"
+          }
+        }
+      },
+      "post": {
+        "tags": ["Clientes"],
+        "responses": {
+          "201": {
+            "description": "Cliente creado"
+          }
+        }
+      },
+      "put": {
+        "tags": ["Clientes"],
+        "responses": {
+          "200": {
+            "description": "Cliente actualizado con éxito"
+          }
+        }
+      },
+      "delete": {
+        "tags": ["Clientes"],
+        "responses": {
+          "200": {
+            "description": "Cliente eliminado con éxito"
+          }
+        }
+      }
+    },
+    "/iniciarSesion": {
+      "post": {
+        "tags": ["Sesión"],
+        "responses": {
+          "200": {
+            "description": "Inicio de sesión exitoso"
+          }
+        }
+      }
+    },
+    "/aprobarTarjeta": {
+      "get": {
+        "tags": ["Tarjetas"],
+        "responses": {
+          "200": {
+            "description": "Listado de tarjetas"
+          }
+        }
+      },
+      "post": {
+        "tags": ["Tarjetas"],
+        "responses": {
+          "200": {
+            "description": "Tarjeta aprobada con éxito"
+          }
+        }
+      },
+      "delete": {
+        "tags": ["Tarjetas"],
+        "responses": {
+          "200": {
+            "description": "Tarjeta eliminada con éxito"
+          }
+        }
+      }
+    },
+    "/asesores": {
+      "get": {
+        "tags": ["Asesores"],
+        "responses": {
+          "200": {
+            "description": "Asesor y credenciales creadas con éxito"
+          }
+        }
+      },
+      "post": {
+        "tags": ["Asesores"],
+        "responses": {
+          "201": {
+            "description": "Asesor y credenciales creadas"
+          }
+        }
+      },
+      "put": {
+        "tags": ["Asesores"],
+        "responses": {
+          "200": {
+            "description": "Asesor actualizado con éxito"
+          }
+        }
+      },
+      "delete": {
+        "tags": ["Asesores"],
+        "responses": {
+          "200": {
+            "description": "Asesor eliminado con éxito"
+          }
+        }
+      }
+    }
+  }
+}

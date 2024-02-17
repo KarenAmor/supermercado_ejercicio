@@ -1,0 +1,6 @@
+{
+    "type": "sqlite3",
+    "database": "db/echo.db",
+    "synchronize": true
+  }
+  
