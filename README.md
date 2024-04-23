@@ -60,7 +60,7 @@ Las contribuciones son bienvenidas. Si deseas contribuir a este proyecto, por fa
 
 ## Autor
 
-Este proyecto fue creado por [Karen Edith Moreno Uldarico Ruiz].
+Este proyecto fue creado por [Karen Edith Moreno].
 
 ## Licencia
 
@@ -68,5 +68,9 @@ Este proyecto está licenciado bajo Licencia MIT. Consulta el archivo LICENSE pa
 
 
 ## Mejoras pendientes
+- Modificar y eliminar empleados
+- Modificar y eliminar areas
+- Mejorar la parte de autenticacion
+- Gestion de productos por area
 
 ## Funcionalidades Pendiente
