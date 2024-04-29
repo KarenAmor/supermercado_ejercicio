@@ -24,7 +24,7 @@ async function crearAreas(req, res) {
     if (!descripcion || !numero_empleados) {
       return res
         .status(400)
-        .json({ error: "Faltan datos obligatorios para crear el area" });
+        .json({ error: "Faltan datos obligatorios para crear el area." });
     }
 
     const area = {
